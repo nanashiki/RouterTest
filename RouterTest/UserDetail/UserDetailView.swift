@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UserDetailView.swift
 //  RouterTest
 //
 //  Created by nanashiki on 2020/03/31.
@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UserDetailView: View {
+    let user: User
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(user.name)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UserDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UserDetailView(user: User(id: "a", name: "a"))
     }
 }
