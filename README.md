@@ -24,3 +24,7 @@ let contentView = UserListView(
     userDetailWireframe: UserDetailRouter()
 )
 ```
+
+## 課題
+
+`func generateView(user: User) -> AnyView` の `AnyView` はどうにもならないかな...
